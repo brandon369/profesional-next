@@ -1,0 +1,17 @@
+import axios from "axios";
+import endPoints from "./index";
+
+
+const addProduct = async (body) =>{
+
+  const config = {
+    accept: '*/*',
+    'Content-Type': 'application/json',
+  };
+
+  const response = await axios.post(endPoints.products.addProducts, body, config);
+  return response.data;
+
+}
+
+export {addProduct}
