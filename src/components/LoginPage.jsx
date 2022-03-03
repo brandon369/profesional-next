@@ -38,6 +38,7 @@ export default function LoginPage() {
                   Email address
                 </label>
                 <input
+                  defaultValue='admin@mail.com'
                   id="email-address"
                   name="email"
                   type="email"
@@ -53,6 +54,7 @@ export default function LoginPage() {
                   Password
                 </label>
                 <input
+                  defaultValue='admin123'
                   id="password"
                   name="password"
                   type="password"
